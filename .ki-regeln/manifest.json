@@ -1,0 +1,13 @@
+{
+  "files": {
+    ".ki-regeln/.gitignore": "92a5dc97a11392c120b1f4aaa5d605e840f8cc8a64e8febd0e99b196d6f5a722",
+    ".ki-regeln/delegation.md": "e74f9a3f87a777f8ee1960376fd9a775394e181b932d1aa335770f15fb7aceb3",
+    ".ki-regeln/roles.json": "004301b955a8feee6f5edcbca4221f7baafb449b28e46c854927592bc739b4ab",
+    ".ki-regeln/task.schema.json": "c06c19d04847746373f30826f3c974976d0371fc25d5b6b21ac13c9492a73812",
+    ".ki-regeln/workflows.md": "b5de40c26f18a5bbd3fc5f8bb3c716ea929965e22f67803d9f247c5c5ac3854b",
+    "AGENTS.md": "6f270dfb2631b3ea1bad8c9c8943f80ff72669441462a142158c04a89a1a9b86",
+    "CLAUDE.md": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49"
+  },
+  "source_sha": "d81ff3d2c381eed5caadf912227431b5ab697dbe",
+  "version": 1
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "KI-Regeln Taskpaket v1",
+  "type": "object",
+  "required": ["version", "task", "repository", "head_sha", "worktree_fingerprint", "goal", "acceptance_criteria", "next_action", "verification"],
+  "properties": {
+    "version": {"const": 1},
+    "task": {"type": "string"},
+    "repository": {"type": "string"},
+    "head_sha": {"type": "string", "pattern": "^[0-9a-f]{40,64}$"},
+    "base_sha": {"type": ["string", "null"]},
+    "worktree_fingerprint": {"type": "string"},
+    "branch": {"type": "string"},
+    "goal": {"type": "string"},
+    "acceptance_criteria": {"type": "array", "items": {"type": "string"}},
+    "in_scope": {"type": "array", "items": {"type": "string"}},
+    "out_of_scope": {"type": "array", "items": {"type": "string"}},
+    "sources": {"type": "array"},
+    "next_action": {"type": "string"},
+    "verification": {"type": "array", "items": {"type": "object", "required": ["check", "source_sha", "status"], "properties": {"check": {"type": "string"}, "source_sha": {"type": "string"}, "status": {"enum": ["passed", "failed", "blocked", "not_run"]}, "exit_code": {"type": ["integer", "null"]}}}},
+    "deployment": {"enum": ["not_requested", "not_run", "blocked", "failed", "verified"]}
+  }
+}

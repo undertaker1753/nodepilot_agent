@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "profiles": [],
+  "startup_max_bytes": 24576,
+  "scoped_rules": [],
+  "components": []
+}
