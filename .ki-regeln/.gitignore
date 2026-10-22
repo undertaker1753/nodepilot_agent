@@ -1,0 +1,4 @@
+backups/
+sync.lock/
+runs/
+*.local.json
